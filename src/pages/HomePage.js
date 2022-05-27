@@ -5,6 +5,7 @@ import ExperienceShopping from "../components/ui/ExperienceShopping";
 import FeaturedCollection from "../components/ui/FeaturedCollection";
 import DiscountSale from "../components/ui/DiscountSale";
 import SareeImageGrid from "../components/ui/SareeImageGrid";
+import Banner from "../components/ui/Banner";
 
 const Homepage = () => {
     return (
@@ -14,6 +15,7 @@ const Homepage = () => {
             <ExperienceShopping />
             <FeaturedCollection />
             <DiscountSale />
+            <Banner />
         </Container>
     );
 };

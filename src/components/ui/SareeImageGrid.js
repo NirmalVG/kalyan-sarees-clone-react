@@ -13,6 +13,7 @@ import {
     ThirdImage,
     FourthImage,
 } from "../styles/GridImage.styled";
+import { FirstButton, SecondButton, ThirdButton, FourthButton } from "../styles/Button.styled";
 
 const SareeImageGrid = () => {
     return (
@@ -20,15 +21,19 @@ const SareeImageGrid = () => {
             <Grid>
                 <FirstItem>
                     <FirstImage />
+                    <FirstButton>Floral Kanchipuram</FirstButton>
                 </FirstItem>
                 <SecondItem>
                     <SecondImage />
+                    <SecondButton>Kanchipuram Traditional Silk</SecondButton>
                 </SecondItem>
                 <ThirdItem>
                     <ThirdImage />
+                    <ThirdButton>Kanchipuram Soft Silk</ThirdButton>
                 </ThirdItem>
                 <FourthItem>
                     <FourthImage />
+                    <FourthButton>Banarasi Silk</FourthButton>
                 </FourthItem>
             </Grid>
         </Container>

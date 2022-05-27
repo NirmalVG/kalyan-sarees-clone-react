@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Button = styled.button`
     height: 44px;
@@ -17,5 +17,86 @@ export const Button = styled.button`
     &:hover {
         opacity: 0.7;
         cursor: pointer;
+    }
+`;
+
+export const FirstButton = styled.button`
+    position: absolute;
+    top: 5%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(0 0 0 / 40%);
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: rgb(0 0 0 / 60%);
+    }
+`;
+
+export const SecondButton = styled.button`
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(0 0 0 / 40%);
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: rgb(0 0 0 / 60%);
+    }
+`;
+
+export const ThirdButton = styled.button`
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(0 0 0 / 40%);
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 12px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 80%;
+
+    &:hover {
+        background-color: rgb(0 0 0 / 60%);
+    }
+`;
+
+export const FourthButton = styled.button`
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(0 0 0 / 40%);
+    color: white;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: rgb(0 0 0 / 60%);
     }
 `;
