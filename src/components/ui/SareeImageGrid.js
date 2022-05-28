@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "../styles/Container.styled";
 import { Grid } from "../styles/Grid.styled";
 import {
     FirstItem,
@@ -17,7 +16,7 @@ import { FirstButton, SecondButton, ThirdButton, FourthButton } from "../styles/
 
 const SareeImageGrid = () => {
     return (
-        <Container>
+        <>
             <Grid>
                 <FirstItem>
                     <FirstImage />
@@ -36,7 +35,7 @@ const SareeImageGrid = () => {
                     <FourthButton>Banarasi Silk</FourthButton>
                 </FourthItem>
             </Grid>
-        </Container>
+        </>
     );
 };
 

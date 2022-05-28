@@ -38,6 +38,14 @@ export const FirstButton = styled.button`
     &:hover {
         background-color: rgb(0 0 0 / 60%);
     }
+
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        font-size: 11px;
+    }
 `;
 
 export const SecondButton = styled.button`
@@ -57,6 +65,14 @@ export const SecondButton = styled.button`
 
     &:hover {
         background-color: rgb(0 0 0 / 60%);
+    }
+
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        font-size: 11px;
     }
 `;
 
@@ -79,6 +95,15 @@ export const ThirdButton = styled.button`
     &:hover {
         background-color: rgb(0 0 0 / 60%);
     }
+
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        font-size: 11px;
+        width: 55%;
+    }
 `;
 
 export const FourthButton = styled.button`
@@ -98,5 +123,38 @@ export const FourthButton = styled.button`
 
     &:hover {
         background-color: rgb(0 0 0 / 60%);
+    }
+
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        font-size: 11px;
+    }
+`;
+
+export const AdButton = styled.button`
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #2a2a2a;
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+        width: 50%;
+        top: 50%;
+        left: 50%;
     }
 `;

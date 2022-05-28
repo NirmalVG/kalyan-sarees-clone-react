@@ -8,6 +8,10 @@ export const StyledFooter = styled.footer`
         font-size: 13px;
         color: #868686;
     }
+
+    ul {
+        list-style-type: none;
+    }
 `;
 
 export const FooterLogo = styled.img`
