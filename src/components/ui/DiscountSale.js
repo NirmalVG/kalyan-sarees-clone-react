@@ -18,7 +18,10 @@ const DiscountSale = () => {
                             alt={discount.name}
                         />
                         <h6>{discount.name}</h6>
-                        <p>{discount.price}</p>
+                        <span>
+                            <p>{discount.originalPrice}</p>
+                            <p>{discount.price}</p>
+                        </span>
                         <a href="#!">ADD TO CART</a>
                     </Flex>
                 ))}

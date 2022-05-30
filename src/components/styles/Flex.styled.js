@@ -15,15 +15,26 @@ export const Flex = styled.div`
         padding: 0px 10px 10px 10px;
     }
 
+    p:first-child {
+        text-decoration: line-through;
+        opacity: 0.6;
+        padding-right: 0px;
+    }
+
+    span {
+        display: flex;
+        flex-direction: row;
+    }
+
     a {
-        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
         text-decoration: none;
         color: #cc0000;
         padding: 0px 10px 10px 10px;
         margin-top: 0px;
         font-size: 13px;
         font-weight: bold;
-        font-family: 'Ubuntu', sans-serif;
+        font-family: "Ubuntu", sans-serif;
     }
 
     a:hover {

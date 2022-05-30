@@ -3,10 +3,14 @@ import { Link } from "react-router-dom";
 
 export const StyledHeader = styled.header`
     background-color: ${({ theme }) => theme.colors.header};
-    height: 108px;
+    height: 98px;
+    position: sticky;
+	top: 0;
+    z-index: 999;
+    box-shadow: 0px 16px 16px -14px rgba(0,0,0,.2);
 
     @media (max-width: ${({ theme }) => theme.mobile}) {
-        height: 50px;
+        height: 85px;
     }
 `;
 
@@ -76,7 +80,7 @@ export const Ul = styled.ul`
             open ? "translateX(0)" : "translateX(100%)"};
         top: 0;
         right: 0;
-        height: 85vh;
+        height: auto;
         width: 300px;
         padding-top: 3.5rem;
         transition: transform 0.3s ease-in-out;
@@ -105,10 +109,14 @@ export const NavLink = styled(Link)`
 
 export const NavActiveLink = styled(NavLink)`
     color: #ec1848;
+
+    &:hover {
+        opacity: 0.8;
+    }
 `;
 
 export const IconPack = styled.span`
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-`
+`;

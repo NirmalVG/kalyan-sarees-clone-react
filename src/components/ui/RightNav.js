@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Ul, IconPack } from "../styles/Header.styled";
 import { NavLink, NavActiveLink } from "../styles/Header.styled";
 import { RiShoppingCartLine } from "react-icons/ri";
 import { FaRegUserCircle } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
 import { AiOutlineDown } from "react-icons/ai";
+import {
+    DropdownLink,
+    StyledDropdown,
+    StyledDropdownContent,
+} from "../styles/StyledDropdown.styled";
 
 const RightNav = ({ open }) => {
+    const [dropdown, setDropdown] = useState(false);
+    const [faqsDropdown, setFaqsDropdown] = useState(false);
+
     return (
         <Ul open={open}>
             <li>
@@ -14,7 +22,32 @@ const RightNav = ({ open }) => {
             </li>
             <li>
                 <NavLink to="/shop">
-                    SHOP <AiOutlineDown size={10} />
+                    <StyledDropdown
+                        show={dropdown}
+                        onMouseEnter={() => setDropdown(true)}
+                        onMouseLeave={() => setDropdown(false)}
+                    >
+                        SHOP <AiOutlineDown size={10} />
+                        <StyledDropdownContent dropdown={dropdown}>
+                            <h2>WOMEN</h2>
+                            <DropdownLink to="/sarees">Sarees</DropdownLink>
+                            <DropdownLink to="/lehenga">
+                                Bridal Lehenga
+                            </DropdownLink>
+                            <DropdownLink to="/gowns">Gowns</DropdownLink>
+                            <DropdownLink to="/salwar-readymade">
+                                Salwar Readymade
+                            </DropdownLink>
+                            <DropdownLink to="/salwar-suit">
+                                Salwar Suit
+                            </DropdownLink>
+                            <DropdownLink to="/kurtas">Kurtas</DropdownLink>
+                            <DropdownLink to="/tops">Tops</DropdownLink>
+                            <DropdownLink to="leg-wear">Leg Wear</DropdownLink>
+                            <h2>MEN</h2>
+                            <h2>KIDS</h2>
+                        </StyledDropdownContent>
+                    </StyledDropdown>
                 </NavLink>
             </li>
             <li>
@@ -25,7 +58,24 @@ const RightNav = ({ open }) => {
             </li>
             <li>
                 <NavLink to="/faqs">
-                    FAQS <AiOutlineDown size={10} />
+                    <StyledDropdown
+                        show={faqsDropdown}
+                        onMouseEnter={() => setFaqsDropdown(true)}
+                        onMouseLeave={() => setFaqsDropdown(false)}
+                    >
+                        FAQS <AiOutlineDown size={10} />
+                        <StyledDropdownContent faqsDropdown={faqsDropdown}>
+                            <DropdownLink to="/shipping-policy">
+                                Shipping Policy
+                            </DropdownLink>
+                            <DropdownLink to="/return-policy">
+                                Return Policy
+                            </DropdownLink>
+                            <DropdownLink to="/terms-of-service">
+                                Terms Of Service
+                            </DropdownLink>
+                        </StyledDropdownContent>
+                    </StyledDropdown>
                 </NavLink>
             </li>
             <li>

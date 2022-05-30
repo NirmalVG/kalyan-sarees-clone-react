@@ -4,7 +4,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FooterLogo, StyledFooter } from "../styles/Footer.styled";
 import { Container } from "../styles/Container.styled";
 import { SocialIcons } from "../styles/SocialIcons.styled";
-import { Center } from "../styles/Center.styled";
+import { Center, CenterText } from "../styles/Center.styled";
 
 const Footer = () => {
     return (
@@ -32,7 +32,7 @@ const Footer = () => {
                         </a>
                     </li>
                 </SocialIcons>
-                {/*<Center>
+                <Center>
                     <ul>
                         <li>
                             <a href="https://kalyansarees.co.in/terms-of-service/">
@@ -70,15 +70,15 @@ const Footer = () => {
                             </a>
                         </li>
                     </ul>
-                </Center>*/}
-                <Center>
-                    <FooterLogo src="images/footer-logo.png" alt="Logo" />
                 </Center>
-                <Center>
+                <CenterText>
+                    <FooterLogo src="images/footer-logo.png" alt="Logo" />
+                </CenterText>
+                <CenterText>
                     <p>
                         Powered by <a href="www.netstager.com">Netstager</a>
                     </p>
-                </Center>
+                </CenterText>
             </Container>
         </StyledFooter>
     );

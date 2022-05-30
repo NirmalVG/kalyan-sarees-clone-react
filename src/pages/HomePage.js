@@ -7,10 +7,12 @@ import DiscountSale from "../components/ui/DiscountSale";
 import SareeImageGrid from "../components/ui/SareeImageGrid";
 import Banner from "../components/ui/Banner";
 import StoreAd from "../components/ui/StoreAd";
+import SliderContainer from "../components/ui/SliderContainer";
 
 const Homepage = () => {
     return (
         <>
+            <SliderContainer />
             <Container>
                 <YoutubeVideo />
                 <ExperienceShopping />
