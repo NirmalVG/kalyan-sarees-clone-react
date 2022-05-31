@@ -64,9 +64,13 @@ export const BannerImage = styled.img`
     background-size: cover;
     transition: all 1s;
     cursor: pointer;
+    outline: 2px solid white;
+    outline-offset: -15px;
 
     &:hover {
         transform: scale(1.1);
+        outline: 2px solid white;
+        outline-offset: -20px;
     }
 `;
 

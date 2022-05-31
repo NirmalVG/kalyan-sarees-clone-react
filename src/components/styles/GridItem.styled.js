@@ -67,8 +67,7 @@ export const BannerItem = styled.div`
     grid-row-end: 3;
     position: relative;
     overflow: hidden;
-    outline: 2px solid white;
-    outline-offset: -15px;
+    
 `;
 
 export const FirstAdItem = styled.div`

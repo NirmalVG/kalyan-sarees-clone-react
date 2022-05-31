@@ -4,6 +4,7 @@ export const Flex = styled.div`
     flex: calc(100% / 3);
     max-width: calc(100% / 3);
     padding: 0 4px;
+    position: relative;
 
     p {
         color: #545454;

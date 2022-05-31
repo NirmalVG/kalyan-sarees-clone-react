@@ -3,7 +3,7 @@ import { Wrapper } from "../styles/Wrapper.styled";
 import { Flex } from "../styles/Flex.styled";
 import { FlexImage } from "../styles/FlexImage.styled";
 import { Center } from "../styles/Center.styled";
-import { Button } from "../styles/Button.styled";
+import { Button, DiscountButton } from "../styles/Button.styled";
 import discountSale from "../../data/discountSale";
 
 const DiscountSale = () => {
@@ -17,6 +17,7 @@ const DiscountSale = () => {
                             src={`images/${discount.image}`}
                             alt={discount.name}
                         />
+                        <DiscountButton>{discount.discountSale}</DiscountButton>
                         <h6>{discount.name}</h6>
                         <span>
                             <p>{discount.originalPrice}</p>

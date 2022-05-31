@@ -158,3 +158,22 @@ export const AdButton = styled.button`
         left: 50%;
     }
 `;
+
+export const DiscountButton = styled.button`
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #93af76;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 8px;
+    border: none;
+    cursor: pointer;
+
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+        display: none;
+    }
+`;
