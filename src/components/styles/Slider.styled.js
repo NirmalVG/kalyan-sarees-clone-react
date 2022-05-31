@@ -51,3 +51,28 @@ export const NavButton = styled.button`
         height: auto;
     }
 `;
+
+export const SliderButton = styled.button`
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(0 0 0 / 40%);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 18px 1rem 15px;
+    border: none;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    @media (max-width: ${({ theme }) => theme.mobile}) {
+        font-size: 10px;
+    }
+`;

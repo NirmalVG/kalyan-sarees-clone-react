@@ -5,9 +5,9 @@ export const StyledHeader = styled.header`
     background-color: ${({ theme }) => theme.colors.header};
     height: 98px;
     position: sticky;
-	top: 0;
+    top: 0;
     z-index: 999;
-    box-shadow: 0px 16px 16px -14px rgba(0,0,0,.2);
+    box-shadow: 0px 16px 16px -14px rgba(0, 0, 0, 0.2);
 
     @media (max-width: ${({ theme }) => theme.mobile}) {
         height: 85px;

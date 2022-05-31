@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SliderContainer } from "../styles/Slider.styled";
+import { SliderContainer, SliderButton } from "../styles/Slider.styled";
 import { ImageContainer } from "../styles/Slider.styled";
 import { NavButton } from "../styles/Slider.styled";
 import {
@@ -26,6 +26,7 @@ const Slider = ({ config }) => {
     return (
         <SliderContainer>
             <ImageContainer src={config[imageIndex].Image} />
+            <SliderButton>View Catalogue</SliderButton>
             <NavButton right onClick={next}>
                 <MdOutlineKeyboardArrowRight size={60} />
             </NavButton>

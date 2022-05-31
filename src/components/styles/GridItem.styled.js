@@ -58,7 +58,7 @@ export const FourthItem = styled.div`
         grid-row-start: 13;
         grid-row-end: 17;
     }
-`
+`;
 
 export const BannerItem = styled.div`
     grid-column-start: 1;
@@ -67,7 +67,9 @@ export const BannerItem = styled.div`
     grid-row-end: 3;
     position: relative;
     overflow: hidden;
-`
+    outline: 2px solid white;
+    outline-offset: -15px;
+`;
 
 export const FirstAdItem = styled.div`
     grid-column-start: 1;
@@ -82,7 +84,7 @@ export const FirstAdItem = styled.div`
         grid-row-start: 1;
         grid-row-end: 5;
     }
-`
+`;
 
 export const SecondAdItem = styled.div`
     grid-column-start: 5;
@@ -97,4 +99,4 @@ export const SecondAdItem = styled.div`
         grid-row-start: 5;
         grid-row-end: 9;
     }
-`
+`;
