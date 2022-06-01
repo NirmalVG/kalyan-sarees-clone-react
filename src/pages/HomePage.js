@@ -8,6 +8,7 @@ import SareeImageGrid from "../components/ui/SareeImageGrid";
 import Banner from "../components/ui/Banner";
 import StoreAd from "../components/ui/StoreAd";
 import SliderContainer from "../components/ui/SliderContainer";
+import ScrollContainer from "../components/ui/ScrollContainer";
 
 const Homepage = () => {
     return (
@@ -22,6 +23,7 @@ const Homepage = () => {
                 <Banner />
             </Container>
             <StoreAd />
+            <ScrollContainer />
         </>
     );
 };

@@ -76,3 +76,27 @@ export const SliderButton = styled.button`
         font-size: 10px;
     }
 `;
+
+export const NumberContainer = styled.div`
+    position: absolute;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    bottom: 8%;
+    left: 50%;
+    transform: translate(-50%, 0);
+`;
+
+export const Number = styled.div`
+    font-size: 15px;
+    font-weight: bold;
+    ${(props) =>
+        props.active === true
+            ? css`
+                  color: white;
+              `
+            : css`
+                  color: #BEBEBE;
+              `}
+`;

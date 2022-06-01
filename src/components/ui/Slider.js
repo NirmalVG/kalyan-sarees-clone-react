@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { SliderContainer, SliderButton } from "../styles/Slider.styled";
+import {
+    SliderContainer,
+    SliderButton,
+    NumberContainer,
+    Number,
+} from "../styles/Slider.styled";
 import { ImageContainer } from "../styles/Slider.styled";
 import { NavButton } from "../styles/Slider.styled";
 import {
@@ -33,6 +38,11 @@ const Slider = ({ config }) => {
             <NavButton left onClick={prev}>
                 <MdOutlineKeyboardArrowLeft size={60} />
             </NavButton>
+            <NumberContainer>
+                {config.map((numbers, index) => (
+                    <Number key={numbers.image} active={index === imageIndex}>{numbers.number}</Number>
+                ))}
+            </NumberContainer>
         </SliderContainer>
     );
 };
